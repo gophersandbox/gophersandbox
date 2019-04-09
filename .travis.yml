@@ -4,8 +4,8 @@ services:
 
 before_install:
 - docker pull python
-- docker copy hello.py .
+- docker add hello.py /
 - docker ps -a
 
 script:
-- docker python hello.py
+- docker python /hello.py
