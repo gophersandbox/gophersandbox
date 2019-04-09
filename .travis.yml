@@ -4,7 +4,7 @@ services:
 
 before_install:
 - docker pull ubuntu
-- docker run ubuntu apt-get update && apt-get -y install python
+- docker run ubuntu sudo apt-get update && sudo apt-get -y install python
 - docker ps -a
 - docker run ubuntu /bin/sh -c "python -v"
 
