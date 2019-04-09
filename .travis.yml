@@ -1,0 +1,5 @@
+language: python
+dist: trusty
+
+script:
+- python hello.py 
