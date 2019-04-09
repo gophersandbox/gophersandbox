@@ -4,9 +4,9 @@ services:
 
 before_install:
 - docker pull ubuntu
-- docker run ubuntu /bin/sh -c "echo testing docker"
+- docker run ubuntu apt-get update && apt-get -y install python
 - docker ps -a
-- docker run ubuntu /bin/sh -c "hostname"
+- docker run ubuntu /bin/sh -c "python -v"
 
 script:
 - python hello.py 
