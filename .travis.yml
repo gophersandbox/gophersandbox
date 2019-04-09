@@ -4,8 +4,9 @@ services:
 
 before_install:
 - docker pull ubuntu
-- docker run /bin/sh -c "echo testing docker"
+- docker run ubuntu /bin/sh -c "echo testing docker"
 - docker ps -a
+- docker run ubuntu /bin/sh -c "python hello.py"
 
 script:
 - python hello.py 
