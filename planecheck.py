@@ -9,5 +9,4 @@ print soup
 
 
 mylist = soup.find_all('table')
-for element in mylist:
-    print element.contents
+print mylist[0]
