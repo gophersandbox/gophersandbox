@@ -8,6 +8,6 @@ soup = BeautifulSoup(page.content, 'html.parser')
 print soup
 
 
-#mylist = soup.find(class_='info')
-#for element in mylist:
-#    print element
+#mylist = soup.find_all('table')
+for element in mylist:
+    print element.contents
