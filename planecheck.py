@@ -10,4 +10,4 @@ soup = BeautifulSoup(page.content, 'html.parser')
 
 
 mylist = soup.find_all('div')
-print mylist[0]
+#print mylist[0]
