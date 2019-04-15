@@ -4,3 +4,4 @@ script:
 
   - if [ "$TRAVIS_BRANCH" = "master" ]; then echo "master build"; fi
   - if [ "$TRAVIS_BRANCH" = "development" ]; then echo "development"; fi
+  - python planecheck.py
