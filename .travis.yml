@@ -2,6 +2,5 @@ language: python
 
 script:
 
-  - if [ "$TRAVIS_BRANCH" = "master" ]; then echo "master build"; fi
-  - if [ "$TRAVIS_BRANCH" = "development" ]; then echo "development"; fi
-  - python planecheck.py
+  - if [ "$TRAVIS_BRANCH" = "master" ]; then python planecheck.py production; fi
+  - if [ "$TRAVIS_BRANCH" = "development" ]; then python planecheck.py development; fi
