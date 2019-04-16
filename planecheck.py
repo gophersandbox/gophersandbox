@@ -15,4 +15,4 @@ elif args.echo == 'development':
   page.close()
 
 mylist = soup.find_all('div')
-print mylist[0]
+print (mylist[0])
