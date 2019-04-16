@@ -11,7 +11,7 @@ if args.environment == 'production':
   soup = BeautifulSoup(page.content, 'html.parser')
 elif args.environment == 'development':
   page = open('test/testpage.html')
-  soup = BeautifulSoup(page.content, 'html.parser')
+  soup = BeautifulSoup(page, 'html.parser')
   page.close()
 
 mylist = soup.find_all('div')
